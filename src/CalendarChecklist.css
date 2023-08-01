@@ -1,0 +1,334 @@
+/* .calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 8px;
+  max-width: 300px;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.day.current {
+  background-color: #e8e8e8;
+}
+
+.day.checked {
+  background-color: #43a047;
+  color: #ffffff;
+}
+
+.day.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* ----------- ---------------- */
+/* .calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 8px;
+  max-width: 300px;
+}
+
+.day {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.day.current {
+  background-color: #e8e8e8;
+}
+
+.day.checked {
+  background-color: #43a047;
+  color: #ffffff;
+}
+
+.day.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.day.checked .checkmark {
+  opacity: 1;
+}
+
+.checkmark:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.checkmark:after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+} */
+
+/* -------------------- --------------------- */
+
+/* .calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 8px;
+  max-width: 300px;
+}
+
+.day {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.day.current {
+  background-color: #e8e8e8;
+}
+
+.day.checked {
+  background-color: #43a047;
+  color: #ffffff;
+}
+
+.day.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.day.checked .checkmark {
+  opacity: 1;
+}
+
+.checkmark-icon {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #43a047;
+  border-radius: 50%;
+} */
+
+/* ---------------------------------------------- */
+
+/* .calendar {
+  width: 45%;
+  height: 40%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  padding: 5px 10px;
+  background-color: #69c2d3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #f0f8ff;
+  border-radius: 5%;
+  color: #2a2a2a;
+}
+
+.day.current {
+  background-color: #c4e8ff;
+}
+
+.day.checked {
+  background-color: #b4e0b4;
+}
+
+.day.disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.checkmark {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #06df31;
+}
+.btn {
+  padding: 5px;
+  font-size: 18px;
+} */
+
+.calendar {
+  width: 95vw;
+  height: 60%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  /* Small devices (landscape phones) */
+  .calendar {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium devices (tablets) */
+  .calendar {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Large devices (desktops) */
+  .calendar {
+    width: 40%;
+  }
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  padding: 5px 10px;
+  background-color: #69c2d3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #f0f8ff;
+  border-radius: 5%;
+  color: #2a2a2a;
+}
+
+.day.current {
+  background-color: #c4e8ff;
+}
+
+.day.checked {
+  background-color: #b4e0b4;
+}
+
+.day.disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.checkmark {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #06df31;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 18px;
+}
